@@ -1,3 +1,11 @@
+
+const countEl = document.querySelector(`#categories`).children.length;
+console.log(`В списке ${countEl} категорий`);
+
+const countItemEl = document.querySelectorAll(".item");
+countItemEl.forEach(countItemEl => console.log(`Категория: ${countItemEl.firstElementChild.textContent} 
+Количество элементов: ${countItemEl.lastElementChild.children.length}`));
+
 /*
 Напиши скрипт, который выполнит следующие операции.
 
@@ -13,9 +21,3 @@
     Категория: Животные
     Количество элементов: 4
 */
-const countEl = document.querySelector(`#categories`).children.length;
-console.log(`В списке ${countEl} категорий`);
-
-const countItemEl = document.querySelectorAll(".item");
-countItemEl.forEach(countItemEl => console.log(`Категория: ${countItemEl.firstElementChild.textContent} 
-Количество элементов: ${countItemEl.lastElementChild.children.length}`));
